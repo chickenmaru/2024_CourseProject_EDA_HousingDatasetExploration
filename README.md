@@ -28,12 +28,14 @@ The above figure is the Box Plot for the DIS attribute, where the blue shaded ar
 
 ## 4.Flowchart Three: Split the Data into 80% Training and 20% Testing, Use the MAPE Performance Metric from Predictions to Find the Better Normalization Parameters for Linear Regression. Must List All Tried Results and Select the Best Parameter Value from Them.
 
-MAPE\n
+MAPE
 <img width="318" height="115" alt="image" src="https://github.com/user-attachments/assets/0a7ef439-4edd-42d6-867a-1964c490f1ca" />
 
 
 Use the Data Sampler widget with "Sampling Type: Random" to divide the dataset into 80% training set and 20% testing set for unbiased evaluation.
+
 <img width="819" height="644" alt="image" src="https://github.com/user-attachments/assets/3d05d13b-2d6c-4e41-a9a8-1244329b0001" />
+
 The above values represent the results of performing L1 regularization (Lasso Regularization), where the α values at 0.001, 0.01, 1, and 100 all yield MAPE values of 0.169, indicating that on average, the predicted values have approximately 16.9% error compared to the actual values, which is within an acceptable range.
 
 <img width="819" height="647" alt="image" src="https://github.com/user-attachments/assets/4cad0dfc-833a-48c3-aaab-b512d6d2693a" />
