@@ -1,11 +1,11 @@
-# Overview
+# 📘 Overview
 This assignment introduces data loading and exploratory analysis using the Boston Housing dataset in Orange. The primary tasks involve downloading the dataset via the Datasets widget and saving it as housing.tab, followed by loading and inspecting the file to analyze its structure: 506 instances and 14 attributes (13 features as numeric inputs and 1 target for median home value). Each attribute is described, such as CRIM (per capita crime rate), RM (average rooms per dwelling), and MEDV (target: median value in $1000s). The goal is to understand data types (all numeric), roles (features vs. target), and basic metadata, laying the foundation for regression-based predictive modeling in data mining.
 
-# Flow
-## Flowchart One: Use Datasets to Download Housing and Save as housing.tab
+# ⚙️ Flow
+## 1.Flowchart One: Use Datasets to Download Housing and Save as housing.tab
 <img width="865" height="510" alt="image" src="https://github.com/user-attachments/assets/3d441d94-2037-46ad-a068-f7e70beccfba" />
 
-## Flowchart Two: Open housing.tab and Analyze the Number of Data Instances and Attributes (Features) in Housing, and Introduce the Meaning of Each Attribute
+## 2.Flowchart Two: Open housing.tab and Analyze the Number of Data Instances and Attributes (Features) in Housing, and Introduce the Meaning of Each Attribute
 <img width="865" height="511" alt="image" src="https://github.com/user-attachments/assets/9f4573fc-bde9-4a56-b486-5c55b27b5bd9" />
 
 Click on the File to view the attribute-related information of housing.tab. Name represents the name, Type represents the data type—this file's all attributes are of Type numeric, meaning they are all numerical values. Role represents whether it is a feature or target; feature represents general input attributes, target represents the goal output, which is the value obtained after completing data analysis.
@@ -14,7 +14,7 @@ Click on the File to view the attribute-related information of housing.tab. Name
 
 After clicking on the table, from the info on the left side and the table itself, you can see that this file has 506 data instances, with 13 features and 1 target. The target's data type is numeric, named MEDV, and this dataset has no missing values.
 
-## Flowchart Two: Use Feature Statistics , Box Plot , and Correlations to Analyze Attributes, and Explain the Meaning of the Presented Results
+## 3.Flowchart Two: Use Feature Statistics , Box Plot , and Correlations to Analyze Attributes, and Explain the Meaning of the Presented Results
 
 <img width="865" height="470" alt="image" src="https://github.com/user-attachments/assets/85d6775c-cab9-47fe-8f31-0ef66866bb7f" />
 
@@ -26,7 +26,7 @@ The Box Plot primarily allows one to observe the density of data distribution an
 <img width="865" height="201" alt="image" src="https://github.com/user-attachments/assets/4a4f26db-9dd1-40c4-a71c-f1a4c50942a5" />
 The above figure is the Box Plot for the DIS attribute, where the blue shaded area represents the Q1-Q3 interval, the yellow line represents the median, and the median of the DIS attribute is 3.207450. The blue dividing line in the middle represents the mean, and the number behind it is the variance, meaning the mean of the DIS attribute is 3.795043, and the variance is 2.10363. The blue horizontal line represents the range of data distribution within outliers, and data exceeding this range are outliers. Finally, the blue dots on the left and right sides represent the maximum and minimum values of the entire dataset distribution. From this Box Plot, we can see that since the mean > median, it can be inferred that the distribution of this attribute is likely right-tailed. Additionally, the outlier degree of the maximum value is relatively large, so this value can be specifically identified for further inspection.
 
-## Flowchart Three: Split the Data into 80% Training and 20% Testing, Use the MAPE Performance Metric from Predictions to Find the Better Normalization Parameters for Linear Regression. Must List All Tried Results and Select the Best Parameter Value from Them.
+## 4.Flowchart Three: Split the Data into 80% Training and 20% Testing, Use the MAPE Performance Metric from Predictions to Find the Better Normalization Parameters for Linear Regression. Must List All Tried Results and Select the Best Parameter Value from Them.
 
 MAPE
 <img width="318" height="115" alt="image" src="https://github.com/user-attachments/assets/0a7ef439-4edd-42d6-867a-1964c490f1ca" />
@@ -38,7 +38,7 @@ The above values represent the results of performing L1 regularization (Lasso Re
 The above values represent the results of performing L2 regularization (Ridge Regularization), where the α values at 0.001, 0.01, 1, and 100 all yield MAPE values of 0.169, indicating that on average, the predicted values have approximately 16.9% error compared to the actual values, which is within an acceptable range.
 From the above conclusion, it is known that if no data is deleted, adjusting the α value has little impact on MAPE, and the error mostly falls between 16-17%.
 
-## Flowchart Four: Delete less important features and explain the reason for deletion.By using correlation coefficients, remove attributes with relatively low correlation first.
+## 5.Flowchart Four: Delete less important features and explain the reason for deletion.By using correlation coefficients, remove attributes with relatively low correlation first.
 
 <img width="782" height="594" alt="image" src="https://github.com/user-attachments/assets/9031ef59-fe4d-4ea4-bf82-8c18f420578f" />
 By using the Select Column tool to remove unwanted attributes.
