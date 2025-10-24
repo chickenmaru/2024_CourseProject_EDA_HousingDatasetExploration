@@ -27,9 +27,8 @@ After clicking on the table, from the info on the left side and the table itself
 | `RAD` | Index of accessibility to radial highways |
 | `TAX` | Full-value property-tax rate per $10,000 |
 | `PTRATIO` | Pupil-teacher ratio by town |
-| `B` | 1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town |
+| `B` | the proportion of blacks by town |
 | `LSTAT` | % lower status of the population |
-| `MEDV(Target)` | Median value of owner-occupied homes in $1000's |
  
 ## 3.Flowchart Two: Use Feature Statistics , Box Plot , and Correlations to Analyze Attributes, and Explain the Meaning of the Presented Results
 
